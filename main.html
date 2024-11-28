@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<form>
+<form method = "post">
 <lable for="name">Name</lable>
 <input id ="name" type="text" placeholder="Name"><br>
 
@@ -20,16 +20,18 @@
 <lable for="Have you ever lived with a Dog before?">Have you ever lived with a Dog before?</lable>
 <input id ="checkbox" type="checkbox" placeholder="Have you ever lived with a Dog before?"><br>
 
-<lable for="Please select your preferred breeds">Please select your preferred breeds</lable>
-<select id="multiselect" multiple>
-<option>brred1 </option>
-<option>brred2 </option>
-<option>brred3 </option>
+<lable for="Please select your preferred breeds">Please select your preferred breeds</lable><br>
+<select id="multiselect" name="myselect[]" multiple>
+<option>breed1 </option>
+<option>breed2 </option>
+<option>breed3 </option>
 </select>
 
 <br>
 
-<button>Submit</button>
+<button type="submit">Submit</button>
+
+
 </form>	
 
 </body>
